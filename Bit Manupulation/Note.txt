@@ -1,0 +1,28 @@
+Bit Manipulations :-
+The following are some of the most common bit manipulation operations in Java.
+
+- 1. Bitwise AND (&) :- This operator compares each bit of the first operand to the corresponding bit of the second operand. If both bits are 1, the corresponding result bit is set to Otherwise, the corresponding result bit is set to 0.
+
+- 2. Bitwise OR (|) :- This operator compares each bit of the first operand to the corresponding bit of the second operand. If either bit is 1, the corresponding result bit is set to 1. Otherwise, the corresponding result bit is set to 0.
+
+- 3. Bitwise XOR (^) :- This operator compares each bit of the first operand to the corresponding bit of the second operand. If the bits are not the same, the corresponding result
+
+-----------------------------------------------------------------------------------
+1. Binary Number -
+  - Binary to Decimal - 100 = 4 
+  - Decimal to Binary - 4 = 100
+  - Binary to Octal - 100 = 12
+  - Octal to Binary - 12 = 100
+2. Bitwise Operations -
+  - Bitwise AND (&) - 5 & 3 = 1
+  - Bitwise OR (|) - 5 | 3 = 7
+  - Bitwise XOR (^) - 5 ^ 3 = 6
+
+3. Bit Manipulations -
+- Bitwise NOT (~) - ~5 = -6
+- Bitwise Left Shift (<<) - 5 << 1 = 10
+- Bitwise Right Shift (>>) - 10 >> 1 = 5
+
+
+
+

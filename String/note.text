@@ -1,0 +1,5 @@
+Strings :-
+- Strings are immutable - we can't change the string after declaration (every time it create new object when string is update or change)
+- Strings are sequences of characters
+- Strings are indexed (we can access a character at a specific index)
+- Strings are iterable (we can loop over the characters in a string)
