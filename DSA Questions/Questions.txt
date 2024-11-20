@@ -1,0 +1,51 @@
+1. Find the Maximum Subarray Sum (Kadane’s Algorithm):
+Given an array of integers, find the contiguous subarray with the maximum sum.
+Example: Input: [-2, 1, -3, 4, -1, 2, 1, -5, 4], Output: 6 (subarray [4, -1, 2, 1]).
+
+2. Find Missing Number in Array:
+An array contains numbers from 1 to n with one missing. Find the missing number.
+Example: Input: [1, 2, 4, 6, 3, 7, 8], Output: 5.
+
+** String Questions
+1. Check for Palindrome:
+Write a function to check if a given string is a palindrome.
+Example: Input: "racecar", Output: true.
+
+2.Longest Common Prefix:
+Given an array of strings, find the longest common prefix.
+Example: Input: ["flower", "flow", "flight"], Output: "fl".
+
+**Bit Manipulation Questions
+1. Count Set Bits:
+Write a function to count the number of 1s (set bits) in the binary representation of a number.
+Example: Input: 13 (binary: 1101), Output: 3.
+
+2. Find the Single Number:
+In an array where every number appears twice except for one, find the single number using XOR.
+Example: Input: [2, 2, 1], Output: 1.
+
+
+** Loops Questions
+1. Print Pascal’s Triangle:
+Generate Pascal’s Triangle up to n rows using loops.
+Example for n = 4:
+Copy code
+1
+1 1
+1 2 1
+1 3 3 1
+
+2.Fibonacci Sequence:
+Print the Fibonacci sequence up to the nth term.
+Example: Input: 5, Output: 0, 1, 1, 2, 3.
+
+
+*** Conditional (if-else) Questions
+FizzBuzz Problem:
+Print numbers from 1 to n. For multiples of 3, print "Fizz"; for multiples of 5, print "Buzz"; for multiples of both, print "FizzBuzz".
+Example: Input: 15, Output: 1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, FizzBuzz.
+
+*** Mixed Concept Question
+Rotate an Array by K Steps:
+Rotate the array to the right by k steps.
+Example: Input: nums = [1, 2, 3, 4, 5, 6, 7], k = 3, Output: [5, 6, 7, 1, 2, 3, 4].
