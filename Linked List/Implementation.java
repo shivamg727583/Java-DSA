@@ -113,7 +113,54 @@ public class Implementation {
             return value;
         }
   
+        void deleteHeadNode(){
+            if (head == null) {
+                System.out.println("List is empty!");
+                return;
+            }
+            if (head.next == null) {
+                head = null;
+                tail = null;
+                return;
+            }
+            head = head.next; // Move head to the next node
+        }
   
+        void deleteAt(int idx){
+
+            if(head==null){
+                System.out.println("List is empty");
+                return;
+            }
+
+            if(idx<0 || idx > length()-1){
+                System.out.println("Invalid index value");
+                return;
+            }
+
+            // case:1 - if idx = 0
+            if(idx==0){
+                head = head.next;
+                if(head==null){ // if list become empty
+                    tail = null;
+                }
+                return;
+            }
+            
+            Node temp = head;
+
+            for (int i = 0; i < idx-1 ; i++) {
+                temp = temp.next;                
+            }
+
+            // case-2 : Deleting last node
+            if(temp.next == tail){
+                tail = temp;
+            }
+
+            temp.next = temp.next.next;
+
+        }
     }
 
     public static void main(String[] args) {
@@ -136,6 +183,13 @@ public class Implementation {
 
         int value = list.getAt(2);
         System.out.println("value : "+value);
+
+        list.deleteHeadNode();
+        list.display();
+        
+
+       list.deleteAt(2);
+       list.display();;
 
     }
 }
