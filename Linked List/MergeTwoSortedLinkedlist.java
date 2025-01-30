@@ -16,6 +16,7 @@ public class MergeTwoSortedLinkedlist {
         }
     }
 
+    // Using extra spaces
     public static Node MergeLinkedlist(Node head1, Node head2) {
         Node temp1 = head1;
         Node temp2 = head2;
@@ -47,6 +48,35 @@ public class MergeTwoSortedLinkedlist {
 
     }
 
+// without using extra spaces
+  public static Node MergeList(Node head1, Node head2){
+    Node temp1 = head1;
+    Node temp2 = head2;
+    Node head3 = new Node(0);
+    Node temp = head3;
+
+    while (temp1!=null && temp2!=null) {
+        if(temp1.data < temp2.data ){
+            temp.next = temp1;
+            temp = temp1;
+            temp1 = temp1.next;
+        }
+        else {
+            temp.next = temp2;
+            temp = temp2;
+            temp2 = temp2.next;
+        }
+    }
+    if(temp1==null){
+        temp.next =temp2;
+    }
+    else{
+        temp.next = temp1;
+    }
+
+    return head3.next;
+  }
+
     public static void main(String[] args) {
         Node a = new Node(1);
         Node b = new Node(3);
@@ -76,7 +106,9 @@ public class MergeTwoSortedLinkedlist {
         display(p);
 
         System.out.println("\n Mergerd linkedlist  : ");
-        Node temp = MergeLinkedlist(a, p);
+        // Node temp = MergeLinkedlist(a, p);
+        Node temp = MergeList(a, p);
+
         display(temp);
     }
 }
