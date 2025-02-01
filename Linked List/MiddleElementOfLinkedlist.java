@@ -35,16 +35,28 @@ public class MiddleElementOfLinkedlist {
         Node c = new Node(3);
         Node d = new Node(8);
         Node e = new Node(20);
-        Node f = new Node(30);
+        // Node f = new Node(30);
         
         a.next =b;
         b.next=c;
         c.next =d;
         d.next=e;
-        e.next =f;
+        // e.next =f;
         
         display(a);
-        Node mid = MiddleElement(a);
+        Node mid = MiddleNode(a);
       System.out.println("Middle elem : "+  mid.data);
+    }
+
+
+    public static Node MiddleNode(Node head){
+        Node slow = head;
+        Node fast = head;
+
+        while (fast.next!=null && fast.next.next!=null) {
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+        return slow;
     }
 }

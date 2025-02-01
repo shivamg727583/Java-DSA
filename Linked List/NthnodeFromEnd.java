@@ -1,3 +1,5 @@
+import java.security.PublicKey;
+
 public class NthnodeFromEnd {
 
     public static class Node{
@@ -42,9 +44,11 @@ return temp;
         c.next =d;
         d.next=e;
 
-        Node temp = nthNode(a, 3);
+        Node temp = nthNode(a, 1);
         System.out.println("nth node from end  is : "+temp.data);
 
         
     }
+  
+    
 }
