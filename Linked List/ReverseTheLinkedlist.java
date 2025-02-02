@@ -17,15 +17,20 @@ public class ReverseTheLinkedlist {
         }
         
     }
-    public static Node reverse(Node head){
-        Node t = head;
-        if(t==null){
-            return null;
-        }
-        
-            reverse(t.next);
-           return t;
-        
+
+    // iterative method
+    public static Node reverseIterative(Node head){
+       Node prev = null;
+       Node current = head;
+       Node Next = null;
+       while( current!=null){
+        Next = current.next;
+        current.next = prev;
+        prev =current;
+        current=Next;
+       }
+         
+            return prev;
         
     }
     public static void main(String[] args) {
@@ -44,9 +49,21 @@ public class ReverseTheLinkedlist {
         display(a);
 
         System.out.println("\n After reverse linkedlist : \n");
-      Node t =  reverse(a);
+      Node t =  reverseRecursive(a);
       display(t);
          
         
     }
+
+    public static Node reverseRecursive(Node head){
+        if(head==null || head.next==null){
+            return head;
+        }
+
+        Node newHead = reverseRecursive(head.next);
+        head.next.next = head;
+        head.next = null;
+        return newHead;
+    }
+
 }
