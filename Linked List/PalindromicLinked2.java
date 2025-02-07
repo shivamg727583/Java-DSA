@@ -82,4 +82,6 @@ public class PalindromicLinked2 {
         System.out.println("\nLinked list after palindrome check (should be unchanged):");
         display(a);
     }
+
+   
 }
