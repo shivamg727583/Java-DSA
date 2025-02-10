@@ -1,5 +1,5 @@
 ** Stack - 
-
+Lifo - Last in first out
 
 * Operations :
 + `push` : Adds an element to the top of the stack.
