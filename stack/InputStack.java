@@ -33,5 +33,16 @@ public class InputStack {
         }
 
         System.out.println("Reverse order : "+rt);
+        System.out.println("\n recursion : ");
+        Display(rt);
     }
+
+    public static void Display(Stack<Integer> st){
+        int top = st.pop();
+        System.out.print(top+" ");
+        Display(st);
+        st.push(top);
+    }
+
+  
 }
