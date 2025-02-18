@@ -11,7 +11,7 @@ public class RemoveAtBottom {
 
         System.out.println("Original Stack: " + st);
 
-        Stack<Integer> updatedStack = remove(st,2);
+        Stack<Integer> updatedStack = remove(st,1);
 
         System.out.println("Updated Stack: " + updatedStack);
         
@@ -28,6 +28,7 @@ while (st.size()>index+1) { // since 0-based index
 }
 
 st.pop();
+System.out.println("   "+st+"     ");
 
 while (!rt.isEmpty()) {
     st.push(rt.pop());

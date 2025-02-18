@@ -49,6 +49,10 @@ public class ArrayImplementation {
         boolean isFull() {
             return idx == arr.length;
         }
+
+        int size(){
+            return idx;
+        }
     }
 
     public static void main(String[] args) {
@@ -66,7 +70,7 @@ public class ArrayImplementation {
         st.display();
 
         System.out.println("Top element: " + st.peek());
-        System.out.println("Stack size: " + st.idx);
+        System.out.println("Stack size: " + st.size());
         System.out.println("Is Empty: " + st.isEmpty());
         System.out.println("Is Full: " + st.isFull());
     }
