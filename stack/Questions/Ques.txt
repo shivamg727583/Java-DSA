@@ -10,5 +10,18 @@ Q-3 :  Remove consecutive subsequence -
        output  = ans = [1,3,2,5,2]
 
 Q-4 : Next greater element -   (If there is not greate element then print -1 else print next greater element)
-    input - 1 3 2 1  8   6  3  4
-output -    3 8 8 8 -1 -1  4 -1   
+     input - 1 3 2 1  8   6  3  4
+     output -    3 8 8 8 -1 -1  4 -1   
+
+Q-5 : Largest rectangle in Histogram
+         Given an array of integer heights representing the Histogram's bar height where the width of each bar is 1, return the area of the largest rectangle in Histogram.
+
+Q-6 : Min stack    
+
+Q-7 : Celebrity number - 
+          A Celebrity is a person who is known to all but does not knoe anyone at a party. If you go to a party of N people, find if there is a Celebrity in the party or not.
+          A square NxN matrix M[][] used to represent people at the party such that if an element of row i and column j is set to 1 it means ith person knows jth person. here M[i][j] will always be 0.
+       Ex-  N =3
+            M[][] = {[0,1,0],{0,0,0},{0,1,0}}
+            output - 1
+        Explanation- 0th and 2nd person both know 1, therfore, 1 is Celebrity.        

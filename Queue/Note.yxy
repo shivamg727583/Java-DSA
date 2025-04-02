@@ -1,0 +1,13 @@
+ ##  Queues - LILO (Last in Last out) || FIFO (First in First out) :
+-> Queue is a type of data structure which is used for storing data , and i works on the principal of FIFO or LILO ,1
+     Ex- A line for movie tickets or other Queue.
+
+-> Types of operations that can be performed on queque -:
+   1. add()
+   2. remove()
+   3. peek()
+   4. isEmpty()
+   5. size()
+   6. clear()
+  
+
