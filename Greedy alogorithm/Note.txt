@@ -1,0 +1,1 @@
+Greedy algorithm - Always look for local solution , witout worring about future 
